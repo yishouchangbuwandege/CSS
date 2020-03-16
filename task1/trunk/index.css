@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+}
+.wrap {
+    height: 100vm;
+}
+.box {
+    float: left;
+    margin: 2.5% 0 0 2.5%;
+    width: 30%;
+    height: 30%;
+    background-color: #fea500;
+    border-radius: 1rem;
+}
