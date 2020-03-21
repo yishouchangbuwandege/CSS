@@ -1,0 +1,123 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+/*顶部状态栏*/
+.contact {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 40px;
+    line-height: 40px;
+}
+.contact p {
+    margin: auto 0;
+    margin-left: 15px;
+    font-size: 1.4rem;
+    color: #29B078;
+}
+.app {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 15px;
+}
+.img {
+    float: left;
+    background: url("../pic/chat.png") no-repeat;
+}
+#wechat {
+    margin-right: 24px;
+    width: 25px;
+    height: 24px;
+    background-position: 0 0;
+}
+#qq {
+    margin-right: 24px;
+    width: 25px;
+    height: 24px;
+    background-position: -25px 0;
+}
+#weibo {
+    width: 25px;
+    height: 24px;
+    background-position: 0 -24px;
+}
+
+
+
+
+/*页脚*/
+.footer {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #26A26F;
+}
+.row-footer {
+    padding: 35px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.footer-left div {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.middle-middle {
+    margin: 20px 0;
+}
+.left-bottom {
+    display: flex;
+    margin-top: 64px;
+}
+.left-bottom p {
+    margin-bottom: 0;
+}
+.cont {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+.footer-right div {
+    text-align: center;
+}
+.right-name {
+    margin-bottom: 10px;
+}
+.row-bottom {
+    border-top: solid 1px #32C086;
+    background-color: #26A26F;
+}
+.copyright {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+@media all and (max-width: 576px) {
+    .row-footer {
+        text-align: center;
+    }
+    .footer-left {
+        margin-bottom: 60px;
+    }
+    .left-bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 768px) {
+    .contact p {
+        display: none;
+    }
+    .footer-right {
+        margin-top: 60px;
+    }
+}
