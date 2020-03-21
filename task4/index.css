@@ -87,5 +87,9 @@ button {
     padding-right: 1.5rem;
     margin: 10px 0;
     font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+}
+.fgp:hover {
     color: #5fc0cd;
 }
