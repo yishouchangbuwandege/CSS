@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 .row-sub {
-    margin-top: 150px;
+    margin-top: 50px;
     text-align: center;
 }
 .row-sub0 {
@@ -30,7 +30,7 @@
 }
 .row-sub1 {
     margin: auto 0;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-left: 40px;
 }
 .num {
@@ -217,16 +217,21 @@ h2 {
         margin: 0 3%;
     }
     .stu {
-        margin-top: 20px;
-        width: 45%;
+        margin: 20px auto;
+        width: 70%;
     }
     .fac1 {
-        width: 50%;
+        margin: 10px auto;
+        width: 70%;
     }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 768px) and (min-width: 576px) {
     .row-sub {
+        padding: 0 50px;
         margin-top: 80px;
+    }
+    .row-sub1 {
+        padding-left: 50px;
     }
     .learn img {
         display: none;
@@ -239,7 +244,35 @@ h2 {
         width: 45%;
     }
     .fac1 {
-        width: 50%;
+        margin: 10px auto;
+        width: 40%;
     }
-
+}
+@media all and (max-width: 992px) and (min-width: 768px) {
+    .row-sub {
+        padding: 0 50px;
+        margin-top: 80px;
+    }
+    .num{
+        display: flex;
+        justify-content: center;
+    }
+    .student,
+    .job {
+        text-align: center;
+    }
+    .row-sub1 {
+        margin: 0 auto;
+    }
+    .learn img {
+        display: none;
+    }
+    .stu {
+        margin: 20px auto;
+        width: 30%;
+    }
+    .fac1 {
+        margin: 20px auto;
+        width: 40%;
+    }
 }

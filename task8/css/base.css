@@ -48,6 +48,19 @@ body {
     background-position: 0 -24px;
 }
 
+/*面包屑导航*/
+.row-bnav {
+    margin: 0 auto;
+    border-bottom: solid 1px #D0D6D9;
+    max-width: 1200px;
+    height: 8rem;
+    line-height: 8rem;
+    font-size: 1.6rem;
+    color: #333;
+}
+.row-bnav :nth-child(2) {
+    color: #29b078;
+}
 
 
 
@@ -56,6 +69,11 @@ body {
     font-size: 1.6rem;
     color: #fff;
     background-color: #26A26F;
+}
+.footer-left,
+.footer-middle,
+.footer-right {
+    padding: 0;
 }
 .row-footer {
     padding: 35px 0;
