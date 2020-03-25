@@ -15,7 +15,7 @@ body {
 }
 .contact p {
     margin: auto 0;
-    margin-left: 15px;
+    padding-left: 27px;
     font-size: 1.4rem;
     color: #29B078;
 }
@@ -43,11 +43,43 @@ body {
     background-position: -25px 0;
 }
 #weibo {
+    margin-right: 12px;
     width: 25px;
     height: 24px;
     background-position: 0 -24px;
 }
-
+/*响应式导航栏*/
+nav {
+    height: 6rem;
+    background-color: #29b078;
+}
+i {
+    width: 20px;
+    height: 20px;
+    font-size: 3rem;
+    color: black;
+    background-color: white;
+}
+.navbar-toggler {
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+#logo {
+    margin-left: 12px;
+    transform: scale(0.7);
+}
+#collapsibleNavbar {
+    flex-direction: row-reverse;
+}
+.nav-item {
+    margin: 0 1.5rem;
+    padding: 0 1.5rem;
+    height: 6rem;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 6rem;
+}
 /*面包屑导航*/
 .row-bnav {
     margin: 0 auto;
@@ -61,9 +93,6 @@ body {
 .row-bnav :nth-child(2) {
     color: #29b078;
 }
-
-
-
 /*页脚*/
 .footer {
     font-size: 1.6rem;
@@ -117,8 +146,30 @@ body {
     font-size: 1.4rem;
     color: #fff;
 }
-
+@media all and (min-width: 576px) {
+    .nav-item:hover {
+        border-bottom: 4px solid #fff;
+    }
+}
 @media all and (max-width: 576px) {
+    #weibo {
+        margin-right: 0;
+    }
+    #collapsibleNavbar {
+        z-index: 99;
+    }
+    .nav-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 6rem;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 6rem;
+    }
+    .nav-item:hover {
+        background-color: #5fc0cd;
+    }
     .row-footer {
         text-align: center;
     }
