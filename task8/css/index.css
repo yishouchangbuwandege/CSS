@@ -1,0 +1,277 @@
+.des {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row-sub {
+    margin-top: 50px;
+    text-align: center;
+}
+.row-sub0 {
+    border-right: dashed 1px #dedede;
+}
+.pic-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 65px;
+}
+.g-x {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+}
+.gx-des {
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #999;
+}
+.row-sub1 {
+    margin: auto 0;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.num {
+    display: flex;
+    align-items: center;
+}
+.pic1 {
+    width: 13px;
+    height: 13px;
+    background: url("../pic/pic1.png") no-repeat;
+    background-position: -60px -10px;
+}
+.stu-num {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #26A26F;
+}
+.student,
+.job {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #999;
+}
+.how-learn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 150px;
+    max-width: 1200px;
+}
+h2 {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 1.8rem;
+    color: #333;
+}
+.list {
+    flex: none;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px #e7e6e7;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4rem;
+    color: #29b078;
+    background-color: #fff;
+}
+.learn {
+    display: flex;
+    align-items: center;
+    padding-bottom: 96px;
+}
+.learn p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #999;
+}
+.learn img {
+    margin-right: 30px;
+}
+.good-stu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.row-stu {
+    display: flex;
+    justify-content: space-between;
+}
+.stu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+    width: 22%;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #999;
+    background-color: #fff;
+}
+.stu img {
+    width: 108px;
+    height: 108px;
+}
+.stu-name {
+    margin: 36px 0 26px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+.stu-des {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #999;
+}
+.row-cir {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+.cir {
+    display: flex;
+}
+.cir-sub {
+    margin: 0 10px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: solid 1px #e7e6e7;
+}
+.cir1 {
+    background-color: #29B078;
+}
+.fac {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 100px 15px 0;
+    max-width: 1200px;
+}
+.row-fac {
+    /*border: solid 1px #e2e2e2;*/
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #e2e2e2;
+}
+.fac1 {
+    width: 20%;
+    line-height: 176px;
+    text-align: center;
+    font-size: 0;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.fac1:hover {
+    box-shadow: 0 0 2px #999 inset;
+}
+.links {
+    margin-top: 70px;
+    background-color: #fff;
+}
+.link-name {
+    margin-top: 20px;
+    padding: 0;
+}
+.row-link {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.link1 {
+    margin: 20px 20px;
+    padding: 0;
+    font-size: 1.4rem;
+    color: #999;
+}
+.link1 li {
+    float: left;
+    margin: 20px;
+}
+@media all and (max-width: 576px){
+    .gx-des {
+        text-align: center;
+    }
+    .num{
+        display: flex;
+        justify-content: center;
+    }
+    .row-sub1 {
+        padding-top: 80px;
+        padding-left: 0;
+    }
+    .student,
+    .job {
+        text-align: center;
+    }
+    .learn {
+        display: flex;
+        justify-content: center;
+    }
+    .learn img {
+        display: none;
+    }
+    .row-stu {
+        margin: 0 3%;
+    }
+    .stu {
+        margin: 20px auto;
+        width: 70%;
+    }
+    .fac1 {
+        margin: 10px auto;
+        width: 70%;
+    }
+}
+@media all and (max-width: 768px) and (min-width: 576px) {
+    .row-sub {
+        padding: 0 50px;
+        margin-top: 80px;
+    }
+    .row-sub1 {
+        padding-left: 50px;
+    }
+    .learn img {
+        display: none;
+    }
+    .row-stu {
+        margin: 0 3%;
+    }
+    .stu {
+        margin-top: 20px;
+        width: 45%;
+    }
+    .fac1 {
+        margin: 10px auto;
+        width: 40%;
+    }
+}
+@media all and (max-width: 992px) and (min-width: 768px) {
+    .row-sub {
+        padding: 0 50px;
+        margin-top: 80px;
+    }
+    .num{
+        display: flex;
+        justify-content: center;
+    }
+    .student,
+    .job {
+        text-align: center;
+    }
+    .row-sub1 {
+        margin: 0 auto;
+    }
+    .learn img {
+        display: none;
+    }
+    .stu {
+        margin: 20px auto;
+        width: 30%;
+    }
+    .fac1 {
+        margin: 20px auto;
+        width: 40%;
+    }
+}
