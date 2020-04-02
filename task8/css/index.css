@@ -169,26 +169,29 @@ h2 {
 }
 .links {
     margin-top: 70px;
+    padding-bottom: 20px;
     background-color: #fff;
 }
-.link-name {
-    margin-top: 20px;
-    padding: 0;
-}
+.link-header,
 .row-link {
     margin: 0 auto;
     max-width: 1200px;
 }
-.link1 {
-    margin: 20px 20px;
+.link-name {
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 0;
+}
+.link-content {
+    padding: 0;
+    text-align: center;
+}
+.link-content a {
+    line-height: 3rem;
     font-size: 1.4rem;
     color: #999;
 }
-.link1 li {
-    float: left;
-    margin: 20px;
-}
+
 @media all and (max-width: 576px){
     .gx-des {
         text-align: center;
