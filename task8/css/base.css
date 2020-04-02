@@ -50,7 +50,7 @@ body {
 }
 /*响应式导航栏*/
 nav {
-    height: 6rem;
+    /*height: 6rem;*/
     background-color: #29b078;
 }
 i {
@@ -83,6 +83,7 @@ i {
 /*面包屑导航*/
 .row-bnav {
     margin: 0 auto;
+    padding: 0 15px;
     border-bottom: solid 1px #D0D6D9;
     max-width: 1200px;
     height: 8rem;
