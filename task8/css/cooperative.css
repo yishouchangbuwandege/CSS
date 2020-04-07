@@ -70,6 +70,9 @@
     align-items: center;
     border-bottom: 1px solid #E6E6E6;
 }
+.info img {
+    flex-shrink: 0;
+}
 .info p {
     margin: 40px 40px 40px 0;
     font-size: 1.4rem;
@@ -82,6 +85,15 @@
 }
 .des p {
     text-indent: 2em;
+}
+@media all and (max-width: 576px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info p {
+        margin: 0 40px 40px 40px;
+    }
 }
 @media all and (max-width: 768px) {
     .indu-content {
