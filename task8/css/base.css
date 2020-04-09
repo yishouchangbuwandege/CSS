@@ -75,10 +75,10 @@ i {
 .nav-item {
     margin: 0 1.5rem;
     padding: 0 1.5rem;
-    height: 6rem;
+    height: 8rem;
     font-size: 1.6rem;
     text-align: center;
-    line-height: 6rem;
+    line-height: 8rem;
 }
 /*面包屑导航*/
 .row-bnav {

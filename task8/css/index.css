@@ -152,20 +152,20 @@ h2 {
     max-width: 1200px;
 }
 .row-fac {
-    /*border: solid 1px #e2e2e2;*/
     border-radius: 6px;
     box-shadow: 0 1px 1px #e2e2e2;
+    background-color: #fff;
 }
 .fac1 {
-    width: 20%;
+    margin: 0 5px;
+    width: calc(20% - 10px);
     line-height: 176px;
     text-align: center;
     font-size: 0;
-    border-radius: 6px;
     background-color: #fff;
 }
 .fac1:hover {
-    box-shadow: 0 0 2px #999 inset;
+    box-shadow: 0 0 10px #999;
 }
 .links {
     margin-top: 70px;
@@ -191,7 +191,13 @@ h2 {
     font-size: 1.4rem;
     color: #999;
 }
-
+@media all and (max-width: 425px) {
+    .col-1-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 @media all and (max-width: 576px){
     .gx-des {
         text-align: center;
