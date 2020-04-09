@@ -1,0 +1,174 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+/*顶部*/
+header {
+    width: 100%;
+    background-color: #1D7AD9;
+    z-index: 999;
+}
+.header-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    height: 40px;
+}
+.tel {
+    font-size: 1.4rem;
+    color: #fff;
+}
+button {
+    border: none;
+    outline: none;
+}
+.login {
+    width: 100px;
+    height: 40px;
+    border-left: 1px solid #fff;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #1D7AD9;
+}
+.sign-up {
+    width: 100px;
+    height: 40px;
+    font-size: 1.7rem;
+    color: #333;
+    background-color: #fff;
+}
+/*响应式导航*/
+nav {
+    background-color: #F9F9F9;
+}
+.nav-wrap {
+    max-width: 1200px;
+    flex-direction: row-reverse;
+}
+.navbar-toggler {
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.nav-icon {
+    margin: 15px;
+    width: 50px;
+    height: 30px;
+}
+.icon-wrap,
+.icon {
+    width: 30px;
+    height: 20px;
+}
+.icon {
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+}
+#collapsibleNavbar {
+    flex-direction: row-reverse;
+    box-sizing: padding-box;
+    margin: 25px 0;
+    width: 100%;
+}
+.nav-item {
+    margin-right: 15px;
+    width: 98px;
+    line-height: 50px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+}
+.item1 {
+    background-color: #1D7AD9;
+}
+#link1 {
+    color: #fff;
+}
+.nav-link {
+    padding: 0;
+    color: #333;
+}
+/*页脚*/
+footer {
+    padding-top: 3rem;
+    background-color: #F9F9F9;
+}
+.footer {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.logo p,
+.about a {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #999999;
+}
+.about {
+    padding: 0;
+}
+.about a {
+    display: inline-block;
+    width: 32%;
+}
+.connect {
+    display: flex;
+    justify-content: center;
+}
+.connect-left {
+    margin-right: 10px;
+    font-size: 1.6rem;
+    color: #999999;
+}
+.code {
+    margin-left: 10px;
+}
+.footer-bottom {
+    padding: 0 15px;
+    line-height: 20px;
+    background-color: #1D7AD9;
+}
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+.logo,
+.about,
+.connect {
+    margin: 1rem 0 3rem 0;
+}
+
+@media all and (max-width: 576px) {
+    #collapsibleNavbar {
+        margin: 0;
+    }
+    .navbar-nav {
+        margin-bottom: 25px;
+    }
+    /*小尺寸下下拉导航宽度100%*/
+    .nav-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+    /*悬浮后变色*/
+    .nav-item:hover {
+        background-color: #5fc0cd;
+    }
+    /*小尺寸下页脚间距变大*/
+    .about {
+        margin: 2rem 0;
+    }
+}
