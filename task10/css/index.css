@@ -91,6 +91,14 @@ input[type='radio']:checked+i {
     padding: 2px;
     border: 5px solid #1D7AD9;
 }
+/*修改select默认样式*/
+select {
+    font-size: 1.4rem;
+    color: #999;
+}
+option {
+    color: #999;
+}
 /*形状提示*/
 .shape,
 .shape-content,
