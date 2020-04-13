@@ -8,14 +8,6 @@ html {
 label {
     margin: 0;
 }
-/*定义五等分栅格*/
-@media all and (min-width: 992px) {
-    .col-lg-1-5 {
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-}
 /*主体*/
 .main {
     padding-bottom: 27px;
@@ -93,10 +85,22 @@ input[type='radio']:checked+i {
 }
 /*修改select默认样式*/
 select {
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-left: 10px;
+    margin-right: 15px;
+    width: 120px;
+    height: 36px;
     font-size: 1.4rem;
     color: #999;
+    background: url("../pic/selcet-img.png") no-repeat 95% center transparent;
+    background-size: 20%;
 }
 option {
+    width: 120px;
+    height: 36px;
+    font-size: 1.4rem;
     color: #999;
 }
 /*形状提示*/
@@ -113,15 +117,60 @@ option {
 .material {
     background-color: #F4F4F4;
 }
-.shape-header p {
-    margin: 1rem 0;
+.shape-icon,
+.size-icon,
+.material-icon {
+    display: inline-block;
+    margin-right: 6px;
+}
+.shape-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    background: url('../pic/make-box.png') no-repeat -12px -56px;
+    width: 19px;
+    height: 15px;
+}
+.size-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background: url('../pic/make-box.png') no-repeat -12px -12px;
+    width: 22px;
+    height: 20px;
+}
+.material-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background: url('../pic/make-box.png') no-repeat -58px -12px;
+    width: 15px;
+    height: 20px;
+}
+.shape-header,
+.size-tip,
+.material-tips {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+.shape-header span {
+    margin-left: 25px;
     font-size: 1.8rem;
     color: #1D7AD9;
 }
 .shape-content,
 .size-content,
 .material-choose {
-    padding: 2rem 0;
+    padding: 2rem 0 2rem 25px;
+}
+.shape-sub-last,
+.size-sub-last,
+.material-sub-last {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 /*形状内容*/
 select option {
@@ -132,8 +181,8 @@ select option {
     line-height: 40px;
 }
 /*尺寸提示*/
-.size-tip p {
-    margin: 1rem 0;
+.size-tip span {
+    margin-left: 25px;
     font-size: 1.8rem;
     color: #1D7AD9;
 }
@@ -154,13 +203,10 @@ input[name='out-size'] {
 .padding-clear {
     padding: 0;
 }
-.size-sub-last {
-    line-height: 114px;
-}
 
 /*材质提示*/
-.material-tips p {
-    margin: 1rem 0;
+.material-tips span {
+    margin-left: 25px;
     font-size: 1.8rem;
     color: #1D7AD9;
 }
@@ -195,29 +241,58 @@ button {
         display: flex;
         justify-content: flex-end;
     }
-    .shape-sub-last {
-        line-height: 141px;
-    }
     .material-sub {
         line-height: 40px;
-    }
-    .material-sub-last {
-        line-height: 235px;
     }
 }
 @media all and (min-width: 576px) and (max-width: 768px) {
     .material-sub {
         line-height: 40px;
     }
-    .material-sub-last {
-        line-height: 141px;
-    }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
     .material-sub {
         line-height: 60px;
     }
+}
+
+@media all and (min-width: 992px) {
+    /*定义五等分栅格*/
+    .col-lg-1-5 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .col-1-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    .left-margin {
+        margin-left: -16px;
+    }
+    .shape-content,
+    .size-content,
+    .material-choose {
+        padding-right: 25px;
+    }
+    .shape-sub-last,
+    .size-sub-last,
     .material-sub-last {
-        line-height: 134px;
+        margin-top: 1rem;
+    }
+    .out-size,
+    .inner-size {
+        padding-right: 15px;
+    }
+    select {
+        margin-right: 0;
     }
 }
